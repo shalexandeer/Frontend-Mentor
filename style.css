@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Lexend+Deca:wght@200&display=swap');
+
+    .story{
+        padding: 256px;
+        margin: 0px;
+    }
+    .card{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 110px;
+    }
+    .card h1{
+        font-family: 'Big Shoulders Display', cursive;
+        font-weight: 700; 
+    }
+    .card p{
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 12.2px;
+        line-height: 20px;
+    }
+    .card img{
+        height: 40px;
+        width: 40px;
+    }
+    .col1{
+        padding: 32px;
+        background: hsl(31, 77%, 52%);
+        color: #fff;
+        border-radius: 8px 0px 0px 8px;
+    }
+    .col2{
+        padding: 32px;
+        background: hsl(184, 100%, 22%);
+        color: #fff;
+    }
+    .col3{
+        padding: 32px;
+        background: hsl(179, 100%, 13%);
+        color: #fff;
+        border-radius: 0px 8px 8px 0px;
+    }
+    .col1 button{
+        background: #fff;
+        padding: 10px 20px;
+        color:  hsl(31, 77%, 52%);
+        border-radius: 40px;
+    }
+    .col2 button{
+        background: #fff;
+        padding: 10px 20px;
+        color:  hsl(184, 100%, 22%);
+        border-radius: 40px;
+    }
+    .col3 button{
+        background: #fff;
+        padding: 10px 20px;
+        color:  hsl(179, 100%, 13%);
+        border-radius: 40px;
+    }
+    .card button{
+        margin-top: 50px;
+        border: 1px solid #fff;
+        cursor: pointer;
+    }
+    .card button:hover{
+        background: transparent;
+        color: #fff;
+        transition: all 0.5s ease;
+    }
+    .button{
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 600;
+    }
+    .responsive{
+        max-width: 100%;
+        height: auto;
+
+    }
+
+@media screen and (max-width:375px) {
+    .story{
+        padding: 0px;
+    }
+    .card{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .card button{
+        margin-top: 0px;
+    }
+    .col1{
+        border-radius: 8px 8px 0px 0px;
+    }
+    .col3{
+        border-radius: 0 0 8px 8px;
+    }
+}
