@@ -2,13 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Lexend+Deca:wght@200&display=swap');
 
     .story{
-        padding: 256px;
+        padding: 64px;
         margin: 0px;
     }
     .card{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        padding: 110px;
+        display: flex;
+        flex-direction: row;
+        padding: 128px;
+        width: 53%;
+        margin: 0 auto;
     }
     .card h1{
         font-family: 'Big Shoulders Display', cursive;
@@ -29,16 +31,31 @@
         color: #fff;
         border-radius: 8px 0px 0px 8px;
     }
+    .col1:hover{
+        transform: scale(1.1);
+        transition: all 0.5s ease;
+        border-radius: 8px;
+    }
     .col2{
         padding: 32px;
         background: hsl(184, 100%, 22%);
         color: #fff;
+    }
+    .col2:hover{
+        transform: scale(1.1);
+        transition: all 0.5s ease;
+        border-radius: 8px;
     }
     .col3{
         padding: 32px;
         background: hsl(179, 100%, 13%);
         color: #fff;
         border-radius: 0px 8px 8px 0px;
+    }
+    .col3:hover{
+        transform: scale(1.1);
+        transition: all 0.5s ease;
+        border-radius: 8px
     }
     .col1 button{
         background: #fff;
